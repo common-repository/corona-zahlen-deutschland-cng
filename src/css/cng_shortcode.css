@@ -1,0 +1,20 @@
+.cng-shortcode{
+	background-color: rgba(0, 0, 0, 0.85);
+	color:#fff;
+	text-align:center;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.cng-shortcode h2{
+	color:#fff;
+	margin-bottom:20px;
+}
+
+
+.cng-shortcode .meta, .cng-shortcode .meta a{
+	margin-top:20px;
+	font-style:italic;
+	font-size:12px;
+	color:#fff;
+}

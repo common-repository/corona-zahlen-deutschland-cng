@@ -1,0 +1,123 @@
+.cng_overlay{
+	position: fixed;
+	display: block; 
+	width: 250px; 
+	height: 100%; 
+	top: 0px; 
+	bottom: 0px; 
+	
+	background-color: rgba(0, 0, 0, 0.85); 
+	z-index: 100000000;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(30,30,30,0.9);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(30,30,30,0.9));
+	box-shadow: 0px 0px 5px 0px rgba(30,30,30,0.9);
+}
+
+.cng_overlay.right{
+	right: 0px; 
+	transition: right 0.5s;
+}
+.cng_overlay.left{
+	left:0px;
+	transition: left 0.5s;
+}
+
+.cng_overlay.hidden{
+	
+}
+.cng_overlay.hidden.right {
+	right:-250px;
+	transition: right 0.5s;
+}
+
+.cng_overlay.hidden.left{
+	left:-250px;
+	transition: left 0.5s;
+}
+.cng_overlay .switch{
+	background-color: rgba(0, 0, 0, 0.85); 
+	width: 20px;
+	padding:20px 0px;
+	color:#fff; 
+	cursor: pointer;
+	margin-top: calc(50vh - 50px);
+	display: block;
+	position: absolute;
+}
+
+.cng_overlay.left .switch{
+	margin-right: -20px;
+	border-radius: 0px 15px 15px 0px;
+	right:0px;
+}
+.cng_overlay.right .switch{
+	margin-left: -20px;
+	border-radius: 15px 0px 0px 15px;
+}
+
+.cng_overlay.left .switch::before{
+	content:"<";
+	font-weight:bold;
+}
+.cng_overlay.right .switch::before{
+	content:">";
+	font-weight:bold;
+}
+.cng_overlay.hidden.left .switch::before{
+	content:">";
+	font-weight:bold;
+}
+.cng_overlay.hidden.right .switch::before{
+	content:"<";
+	font-weight:bold;
+}
+
+.cng_overlay .headline{
+	font-size:40px;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	padding-top:20px;
+	margin-bottom:20px;
+}
+.cng_overlay .headline .small{
+	display:block;
+	font-size:25px;
+}
+.cng_overlay .duration{
+	color:#fff;
+	font-size:16px;
+	text-align:center;
+	margin-bottom:20px;
+}
+.cng_overlay .content{
+	color:#fff;
+	padding:0 0 0 20px
+}
+
+
+.cng_overlay .content .sect{
+	margin-bottom:20px;
+}
+
+.cng_overlay .content .sect .key{
+	color:#fff;
+	font-size:20px;
+	line-height: 20px;
+}
+
+.cng_overlay .content .sect .data{
+	color:#fff;
+	font-size:25px;
+	line-height: 20px;
+}
+
+.cng_overlay .meta{
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	font-style:italic;
+}
+.cng_overlay .meta a{
+	color:#fff;
+}
